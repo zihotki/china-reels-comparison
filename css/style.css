@@ -52,9 +52,15 @@ h3 {
 Main Components 
 
 -------------------------------- */
-.cd-products-comparison-table {
-  margin-bottom: 6em;
+.cd-products-comparison-table, .feature-description {
+  margin-bottom: 3em;
 }
+
+.feature-description {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
 .cd-products-comparison-table::after {
   /* never visible - this is used in jQuery to check the current MQ */
   display: none;
@@ -101,15 +107,13 @@ Main Components
   background-color: #a7cea1;
 }
 @media only screen and (min-width: 1170px) {
-  .cd-products-comparison-table {
-    margin-bottom: 8em;
-  }
+
   .cd-products-comparison-table::after {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop';
   }
   .cd-products-comparison-table header {
-    padding: 0 5% 40px;
+    padding: 0 5% 30px;
   }
   .cd-products-comparison-table h2 {
     font-size: 2.4rem;
@@ -177,7 +181,7 @@ Main Components
 
 .cd-products-columns {
   /* products list wrapper */
-  width: 1200px;
+  width: 1350px;
   margin-left: 120px;
 }
 .cd-products-columns::after {
@@ -187,7 +191,7 @@ Main Components
 }
 @media only screen and (min-width: 1170px) {
   .cd-products-columns {
-    width: 2480px;
+    width: 2790px;
     margin-left: 210px;
   }
 }
@@ -227,7 +231,7 @@ Main Components
 .cd-features-list>li {
   font-size: 1.4rem;
   font-weight: bold;
-  padding: 25px 40px;
+  padding: 25px 30px;
   border-color: #e6e6e6;
   border-style: solid;
   border-top-width: 1px;
